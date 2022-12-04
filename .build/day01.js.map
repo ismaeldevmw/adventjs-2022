@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../day01.ts"],
+  "sourcesContent": ["export class GiftWrappingMachine {\n  \n  wrapping(gifts: Array<String>): Array<String> {\n    const wrappedGifts: Array<String> = gifts.map(item => {\n      const length: number = item.length + 2;\n      const wrap: String = \"*\".repeat(length)\n      return wrap + \"\\n*\" + item + \"*\\n\" + wrap;\n    })\n    \n    return wrappedGifts;\n  }\n\n  wrapping2(gifts: Array<String>): Array<String> {\n    const giftsArr: Array<String> = [];\n\n    for(let gift of gifts) {\n      const wrapper: String = \"*\".repeat(gift.length + 2);\n      giftsArr.push(`${wrapper}\\n*${gift}*\\n${wrapper}`);\n    }\n  \n    return giftsArr\n  }\n  \n}\n"],
+  "mappings": ";;;;;;;AAAA;AAAA;AAAA;AAAO,0BAA0B;AAAA,EAE/B,SAAS,OAAqC;AAC5C,UAAM,eAA8B,MAAM,IAAI,UAAQ;AACpD,YAAM,SAAiB,KAAK,SAAS;AACrC,YAAM,OAAe,IAAI,OAAO;AAChC,aAAO,OAAO,QAAQ,OAAO,QAAQ;AAAA;AAGvC,WAAO;AAAA;AAAA,EAGT,UAAU,OAAqC;AAC7C,UAAM,WAA0B;AAEhC,aAAQ,QAAQ,OAAO;AACrB,YAAM,UAAkB,IAAI,OAAO,KAAK,SAAS;AACjD,eAAS,KAAK,GAAG;AAAA,GAAa;AAAA,EAAU;AAAA;AAG1C,WAAO;AAAA;AAAA;",
+  "names": []
+}

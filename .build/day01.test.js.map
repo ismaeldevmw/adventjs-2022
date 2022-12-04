@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../day01.test.ts"],
+  "sourcesContent": ["import {describe, expect, test} from '@jest/globals';\nimport { GiftWrappingMachine } from \"./day01\";\n\nconst wrapped = new GiftWrappingMachine();\n\ndescribe('GiftWrappingMachine module', () => {\n  test('return type', () => {\n    expect(wrapped.wrapping2(['book', 'game', 'socks'])).toBeInstanceOf(Array);\n  });\n  test('Wrap my gifts 1', () => {\n    expect(wrapped.wrapping(['book', 'game', 'socks']))\n      .toStrictEqual(\n        [\"******\\n*book*\\n******\",\"******\\n*game*\\n******\",\"*******\\n*socks*\\n*******\"]\n      );\n  });\n  test('Wrap my gifts 2', () => {\n    expect(wrapped.wrapping(['midu']))\n      .toStrictEqual(\n        [\"******\\n*midu*\\n******\"]\n      );\n  });\n  test('Wrap my gifts 3', () => {\n    expect(wrapped.wrapping(['a']))\n      .toStrictEqual(\n        [\"***\\n*a*\\n***\"]\n      );\n  });\n  test('Wrap my gifts 4', () => {\n    expect(wrapped.wrapping([]))\n      .toStrictEqual(\n        []\n      );\n  });\n});"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA,qBAAqC;AACrC,mBAAoC;AAEpC,MAAM,UAAU,IAAI;AAEpB,6BAAS,8BAA8B,MAAM;AAC3C,2BAAK,eAAe,MAAM;AACxB,+BAAO,QAAQ,UAAU,CAAC,QAAQ,QAAQ,WAAW,eAAe;AAAA;AAEtE,2BAAK,mBAAmB,MAAM;AAC5B,+BAAO,QAAQ,SAAS,CAAC,QAAQ,QAAQ,WACtC,cACC,CAAC,0BAAyB,0BAAyB;AAAA;AAGzD,2BAAK,mBAAmB,MAAM;AAC5B,+BAAO,QAAQ,SAAS,CAAC,UACtB,cACC,CAAC;AAAA;AAGP,2BAAK,mBAAmB,MAAM;AAC5B,+BAAO,QAAQ,SAAS,CAAC,OACtB,cACC,CAAC;AAAA;AAGP,2BAAK,mBAAmB,MAAM;AAC5B,+BAAO,QAAQ,SAAS,KACrB,cACC;AAAA;AAAA;",
+  "names": []
+}
