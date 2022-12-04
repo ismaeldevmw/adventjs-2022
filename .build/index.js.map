@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../index.ts"],
-  "sourcesContent": ["import { GiftWrappingMachine } from \"./day01\";\n\nclass Main {\n\n  main(args?: string[]) {\n    const gifts = ['book', 'game', 'socks']\n\n    const wrapped = new GiftWrappingMachine();\n    const result = wrapped.wrapping2(gifts)\n    console.log(result);\n  }\n\n}\n\nconst program = new Main()\nprogram.main()"],
-  "mappings": ";;;;;;;;;;;;;;;;;;AAAA,mBAAoC;AAEpC,WAAW;AAAA,EAET,KAAK,MAAiB;AACpB,UAAM,QAAQ,CAAC,QAAQ,QAAQ;AAE/B,UAAM,UAAU,IAAI;AACpB,UAAM,SAAS,QAAQ,UAAU;AACjC,YAAQ,IAAI;AAAA;AAAA;AAKhB,MAAM,UAAU,IAAI;AACpB,QAAQ;",
-  "names": []
-}

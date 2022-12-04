@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../day02.ts"],
-  "sourcesContent": ["export class NobodyWantsToDoExtraHoursAtWork {\n\n  countHours(year: number, holidays: Array<string>): number {\n    let extraHours: number = 0;\n\n    holidays.forEach((date: string) => {\n      let concatDate = new Date(year.toString().concat('/' + date));\n      const day = concatDate.getDay();\n      console.log(day)\n      if(day in [1,2,3,4,5]) {\n        extraHours += 2;\n      }\n    });\n    \n    return extraHours;\n  }\n\n}"],
-  "mappings": ";;;;;;;AAAA;AAAA;AAAA;AAAO,sCAAsC;AAAA,EAE3C,WAAW,MAAc,UAAiC;AACxD,QAAI,aAAqB;AAEzB,aAAS,QAAQ,CAAC,SAAiB;AACjC,UAAI,aAAa,IAAI,KAAK,KAAK,WAAW,OAAO,MAAM;AACvD,YAAM,MAAM,WAAW;AACvB,cAAQ,IAAI;AACZ,UAAG,OAAO,CAAC,GAAE,GAAE,GAAE,GAAE,IAAI;AACrB,sBAAc;AAAA;AAAA;AAIlB,WAAO;AAAA;AAAA;",
-  "names": []
-}

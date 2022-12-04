@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../day02.test.ts"],
-  "sourcesContent": ["import { describe, expect, test } from \"@jest/globals\";\nimport { NobodyWantsToDoExtraHoursAtWork } from \"./day02\";\n\nconst program = new NobodyWantsToDoExtraHoursAtWork();\n\ndescribe(\"Count extra hours module\", () => {\n  test(\"Return type\", () => {\n    expect(typeof(program.countHours(2022, ['01/06', '04/01', '12/25']))).toBe(\"number\");\n  });\n  test(\"There is not holidays sent\", () => {\n    expect(program.countHours(2022, [])).toBe(0);\n  });\n  test(\"Not count holidays\", () => {\n    expect(program.countHours(2022, ['12/03', '12/04', '12/10'])).toBe(0);\n  });\n});"],
-  "mappings": ";;;;;;;;;;;;;;;;;;AAAA,qBAAuC;AACvC,mBAAgD;AAEhD,MAAM,UAAU,IAAI;AAEpB,6BAAS,4BAA4B,MAAM;AACzC,2BAAK,eAAe,MAAM;AACxB,+BAAO,OAAO,QAAQ,WAAW,MAAM,CAAC,SAAS,SAAS,WAAY,KAAK;AAAA;AAE7E,2BAAK,8BAA8B,MAAM;AACvC,+BAAO,QAAQ,WAAW,MAAM,KAAK,KAAK;AAAA;AAE5C,2BAAK,sBAAsB,MAAM;AAC/B,+BAAO,QAAQ,WAAW,MAAM,CAAC,SAAS,SAAS,WAAW,KAAK;AAAA;AAAA;",
-  "names": []
-}
